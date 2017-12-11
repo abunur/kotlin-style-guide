@@ -458,9 +458,10 @@ editText?.setText("foo")
 
 Use optional binding when it's more convenient to unwrap once and perform multiple operations:
 
-```swift
-if let textContainer = self.textContainer {
-  // do many things with textContainer
+```kotlin
+val text = bottom_text_edittext.text
+text?.let { 
+  //do many things with text
 }
 ```
 
